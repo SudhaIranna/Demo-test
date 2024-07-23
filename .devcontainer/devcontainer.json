@@ -1,0 +1,10 @@
+{
+  "name": "RKE2 Development",
+  "image": "mcr.microsoft.com/vscode/devcontainers/base:ubuntu",
+  "runArgs": ["--privileged"],
+  "features": {
+    "docker-in-docker": "latest",
+    "kubectl-helm-minikube": "latest"
+  },
+  "postCreateCommand": "sudo apt-get update && sudo apt-get install -y curl"
+}
